@@ -23,6 +23,7 @@
   <!-- SCROLL PROGRESS BAR -->
   <div id="scroll-progress" aria-hidden="true"></div>
 
+
   <!-- =============== NAVIGATION =============== -->
   <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
@@ -67,7 +68,13 @@
         Day 8 of 180 — Building in Public
       </div>
 
-      <h1>Hi, I'm <span class="gradient-text">Vishaali</span></h1>
+      <!-- Name with animated curved underline -->
+      <h1 class="hero-name">
+        Hi, this is Vishaali
+        <svg class="name-underline" viewBox="0 0 300 20" aria-hidden="true">
+          <path d="M10,10 Q150,5 290,10" stroke="currentColor" stroke-width="3" fill="none"/>
+        </svg>
+      </h1>
 
       <p class="hero-tagline" aria-live="polite">
         <span id="typing-text"></span><span class="cursor" aria-hidden="true"></span>
@@ -649,6 +656,8 @@
 
   <!-- BACK TO TOP -->
   <button id="back-to-top" aria-label="Back to top" type="button">↑</button>
+
+
 
   <script src="script.js"></script>
 </body>

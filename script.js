@@ -9,7 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // ============================================
   const typingPhrases = [
     'Aspiring Remote Developer',
-    'Full Stack + AI Enthusiast',
+    'Full Stack Engineer',
+    'AI Enthusiast',
+    'Problem Solver',
     'Building in Public',
     'Day 8 of 180 🚀',
   ];
@@ -331,12 +333,14 @@ document.addEventListener('DOMContentLoaded', () => {
       if (submitBtn) {
         const originalText = submitBtn.textContent;
         submitBtn.textContent = '✓ Message Sent!';
-        submitBtn.style.background = 'linear-gradient(135deg, #10b981, #06b6d4)';
+        submitBtn.style.background = 'var(--gradient-primary)';
+        submitBtn.style.color = '#ffffff';
         submitBtn.disabled = true;
 
         setTimeout(() => {
           submitBtn.textContent = originalText;
           submitBtn.style.background = '';
+          submitBtn.style.color = '';
           submitBtn.disabled = false;
           contactForm.reset();
         }, 3000);
@@ -357,7 +361,6 @@ document.addEventListener('DOMContentLoaded', () => {
       (entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            // Animate from 0 to actual width
             const targetWidth = progressBar.style.width;
             progressBar.style.width = '0%';
             requestAnimationFrame(() => {
@@ -375,7 +378,28 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ============================================
+  // 13. SCROLL REVEAL
+  // ============================================
+  if ('IntersectionObserver' in window) {
+    const revealEls = document.querySelectorAll('.reveal');
+
+    const revealObs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObs.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15, rootMargin: '0px 0px -50px 0px' }
+    );
+
+    revealEls.forEach(el => revealObs.observe(el));
+  }
+
+  // ============================================
   // DONE
   // ============================================
-  console.log('✨ Vishaali Portfolio loaded — Day 8/180');
+  console.log('✨ Vishaali Portfolio loaded — Day 8/180 🚀');
 });
