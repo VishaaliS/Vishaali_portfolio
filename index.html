@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vishaali — Third-year CS student on a 180-day journey to land a remote developer role. Full Stack + AI enthusiast building in public.">
+  <meta name="keywords" content="Vishaali, portfolio, developer, computer science, full stack, AI, remote developer, Chennai">
+  <meta name="author" content="Vishaali">
+  <meta name="theme-color" content="#0a0f1c">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vishaali — Aspiring Remote Developer">
+  <meta property="og:description" content="Third-year CS student building in public. Full Stack + AI enthusiast on a 180-day journey.">
+  <meta property="og:type" content="website">
+
+  <title>Vishaali — Aspiring Remote Developer | Full Stack + AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- SCROLL PROGRESS BAR -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- =============== NAVIGATION =============== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Vishaali — Home">V<span>.</span></a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode" type="button">
+          <span id="theme-icon">🌙</span>
+        </button>
+      </div>
+
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="nav-mobile-overlay" id="nav-mobile-overlay" aria-hidden="true"></div>
+    <div class="nav-mobile-menu" id="nav-mobile-menu" role="dialog" aria-label="Mobile navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#ambassador">Ambassador</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- =============== SECTION 1: HERO =============== -->
+  <section id="hero" class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        Day 8 of 180 — Building in Public
+      </div>
+
+      <h1>Hi, I'm <span class="gradient-text">Vishaali</span></h1>
+
+      <p class="hero-tagline" aria-live="polite">
+        <span id="typing-text"></span><span class="cursor" aria-hidden="true"></span>
+      </p>
+
+      <p class="hero-description">
+        Third-year CS student on a 180-day journey to land a remote developer role.
+        Building in public, learning daily, sharing everything.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#projects" class="btn-primary" id="cta-projects">
+          <span>View Projects</span>
+          <span aria-hidden="true">→</span>
+        </a>
+        <a href="assets/resume.pdf" download="Vishaali_Resume.pdf" class="btn-secondary" id="cta-resume" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Download Resume</span>
+        </a>
+      </div>
+
+
+      <div class="hero-socials">
+        <a href="https://github.com/VishaaliS" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://twitter.com/Vishaali_builds" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/vishaalitech" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:vishaalitech@gmail.com" aria-label="Send email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== SECTION 2: ABOUT =============== -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Profile Picture -->
+        <div class="about-image reveal">
+          <div class="profile-picture-wrapper">
+            <img
+              src="assets/profile.png"
+              alt="Vishaali — Aspiring Remote Developer"
+              class="profile-picture"
+              loading="lazy"
+            >
+            <div class="profile-glow" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <!-- About Content -->
+        <div class="about-content reveal reveal-delay-1">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">Building my path into <span class="gradient-text">remote dev</span></h2>
+
+          <p>
+            I'm a <strong>third-year Computer Science student</strong> at Rajalakshmi Engineering College, Chennai.
+            On June 23, 2025, I made a decision that changed everything — I committed to a
+            <strong>180-day intensive learning journey</strong> to land a remote developer role.
+          </p>
+
+          <p>
+            What makes me different? I'm doing this <strong>completely in public</strong>. Every win, every struggle,
+            every line of code — shared on Twitter for anyone to follow. I believe in radical transparency
+            and the power of learning out loud.
+          </p>
+
+          <p>
+            My approach is structured and relentless: <strong>DSA daily + Full Stack development + AI integration</strong>.
+            I'm not just learning theory — I'm building real-world projects, applying as a campus ambassador,
+            and solving problems every single day.
+          </p>
+
+          <div class="stats-grid reveal reveal-delay-2">
+            <div class="stat-card">
+              <div class="stat-number">8/180</div>
+              <div class="stat-label">Day of Journey</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">20+</div>
+              <div class="stat-label">Problems Solved</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">5</div>
+              <div class="stat-label">Projects Built</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">8+</div>
+              <div class="stat-label">Day GitHub Streak</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =============== SECTION 3: SKILLS =============== -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Skills</span>
+        <h2 class="section-title">Technologies I work with</h2>
+        <p class="section-subtitle">A growing toolkit spanning languages, frameworks, databases, and AI/ML.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Languages -->
+        <div class="skill-category reveal reveal-delay-1">
+          <div class="skill-category-header">
+            <div class="skill-category-icon lang" aria-hidden="true">💻</div>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">C</span>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-category reveal reveal-delay-2">
+          <div class="skill-category-header">
+            <div class="skill-category-icon frontend" aria-hidden="true">🎨</div>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag learning">React</span>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-category reveal reveal-delay-3">
+          <div class="skill-category-header">
+            <div class="skill-category-icon backend" aria-hidden="true">⚙️</div>
+            <h3>Backend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag learning">FastAPI</span>
+            <span class="skill-tag learning">REST APIs</span>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-category reveal reveal-delay-1">
+          <div class="skill-category-header">
+            <div class="skill-category-icon database" aria-hidden="true">🗄️</div>
+            <h3>Database</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag learning">PostgreSQL</span>
+          </div>
+        </div>
+
+        <!-- AI/ML -->
+        <div class="skill-category reveal reveal-delay-2">
+          <div class="skill-category-header">
+            <div class="skill-category-icon ai" aria-hidden="true">🤖</div>
+            <h3>AI / ML</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">Logistic Regression</span>
+            <span class="skill-tag learning">OpenAI API</span>
+            <span class="skill-tag learning">LangChain</span>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category reveal reveal-delay-3">
+          <div class="skill-category-header">
+            <div class="skill-category-icon tools" aria-hidden="true">🛠️</div>
+            <h3>Tools</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Postman</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Currently Learning Banner -->
+      <div class="learning-banner reveal">
+        <h3>🔥 Currently Learning</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">DSA (Daily)</span>
+          <span class="skill-tag">Full Stack Dev (100xDevs)</span>
+          <span class="skill-tag">AI Integration</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== SECTION 4: PROJECTS =============== -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Projects</span>
+        <h2 class="section-title">Things I've <span class="gradient-text">built</span></h2>
+        <p class="section-subtitle">Real-world projects that solve problems and push my skills forward.</p>
+      </div>
+
+      <!-- FEATURED: Stampede Shield -->
+      <div class="featured-project reveal">
+        <div class="featured-project-visual">
+          <span class="featured-badge">⭐ Featured Project</span>
+          <div class="featured-project-image-container">
+            <img
+              src="assets/images/projects/stampede-shield.png"
+              alt="Stampede Shield - IoT crowd safety monitoring system"
+              loading="lazy"
+              class="featured-project-image"
+            >
+          </div>
+        </div>
+        <div class="featured-project-content">
+          <h3>Stampede Shield</h3>
+          <span class="project-type-label">IoT + Machine Learning System</span>
+
+          <div class="achievement-badge">
+            🏆 iQuest Competition Finalist
+          </div>
+
+          <p>
+            IoT-based crowd safety monitoring system using sensors and machine learning
+            to predict stampede risks in real-time. Designed to save lives in crowded events.
+          </p>
+
+          <ul class="feature-list">
+            <li>Real-time crowd monitoring with Ultrasonic, PIR &amp; Mic sensors</li>
+            <li>AI-powered risk prediction using Crowd Pressure Index (CPI)</li>
+            <li>Alert system with LED indicators for instant warnings</li>
+            <li>Logistic Regression model trained on live sensor data</li>
+          </ul>
+
+          <div class="project-tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">HTML/CSS/JS</span>
+            <span class="tech-tag">Logistic Regression</span>
+            <span class="tech-tag">IoT Sensors</span>
+          </div>
+
+          <div class="project-links">
+            <a href="https://github.com/VishaaliS/StampadeShield" class="btn-primary" target="_blank" rel="noopener noreferrer">
+              <span>View Code</span>
+              <span aria-hidden="true">→</span>
+            </a>
+            <span class="btn-secondary btn-disabled" title="Hardware project — cannot be demoed online" aria-label="Hardware project, no online demo available">
+              <span>🔌 Hardware Project</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other Projects Grid -->
+      <div class="projects-grid">
+
+        <!-- VS Code Clone -->
+        <article class="project-card reveal reveal-delay-1">
+          <div class="project-image-container vscode">
+            <img
+              src="assets/images/projects/vscode-clone.png"
+              alt="VS Code Homepage Clone - CSS learning project"
+              loading="lazy"
+              class="project-image"
+            >
+          </div>
+          <div class="project-card-body">
+            <span class="project-status in-progress">🟡 In Progress</span>
+            <h3>VS Code Homepage Clone</h3>
+            <span class="project-type-label">Frontend Mastery</span>
+            <p>Pixel-perfect recreation of Visual Studio Code's homepage to master advanced CSS concepts — Flexbox, Grid, positioning, and responsive design.</p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">Responsive</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/VishaaliS/DSA-Journey" class="btn-secondary" target="_blank" rel="noopener noreferrer">View Code →</a>
+              <span class="btn-secondary btn-disabled" title="Not deployed yet" aria-label="Coming soon, project not yet deployed">⏳ Coming Soon</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Disney Mind -->
+        <article class="project-card reveal reveal-delay-2">
+          <div class="project-image-container movie">
+            <img
+              src="assets/images/projects/disney-mind.png"
+              alt="Disney Mind - Movie recommendation engine"
+              loading="lazy"
+              class="project-image"
+            >
+          </div>
+          <div class="project-card-body">
+            <span class="project-status completed">✅ Completed</span>
+            <h3>Disney Mind</h3>
+            <span class="project-type-label">Recommendation Engine</span>
+            <p>Disney movie recommendation engine with genre filtering (magical, action, adventure) and a similar-movie suggestion algorithm.</p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/VishaaliS/DisneyMind" class="btn-secondary" target="_blank" rel="noopener noreferrer">View Code →</a>
+              <a href="https://disney-mind.vercel.app" class="btn-secondary btn-live" target="_blank" rel="noopener noreferrer">🌐 Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Accountability Hub -->
+        <article class="project-card reveal reveal-delay-3">
+          <div class="project-image-container todo">
+            <img
+              src="assets/images/projects/accountability-hub.png"
+              alt="Accountability Hub - Gamified task management app"
+              loading="lazy"
+              class="project-image"
+            >
+          </div>
+          <div class="project-card-body">
+            <span class="project-status completed">✅ Completed</span>
+            <h3>Accountability Hub</h3>
+            <span class="project-type-label">Collaborative Gamification</span>
+            <p>Collaborative task management with gamification — partners defeat a "boss" together by completing todos. Features daily challenges and boss battles.</p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/VishaaliS/accountability-hub" class="btn-secondary" target="_blank" rel="noopener noreferrer">View Code →</a>
+              <a href="https://accountability-hub-d5xs.vercel.app" class="btn-secondary btn-live" target="_blank" rel="noopener noreferrer">🌐 Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2-Player Game Suite -->
+        <article class="project-card reveal reveal-delay-4">
+          <div class="project-image-container game">
+            <img
+              src="assets/images/projects/two-player-game.png"
+              alt="Two Player Game Suite - Collection of classic games"
+              loading="lazy"
+              class="project-image"
+            >
+          </div>
+          <div class="project-card-body">
+            <span class="project-status completed">✅ Completed</span>
+            <h3>Two Player Game Suite</h3>
+            <span class="project-type-label">Interactive Browser Games</span>
+            <p>Collection of 5 classic two-player games including Tic-Tac-Toe, Rock Paper Scissors, and more — all in one app.</p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/VishaaliS/2-player-game" class="btn-secondary" target="_blank" rel="noopener noreferrer">View Code →</a>
+              <a href="https://2-player-game-black.vercel.app" class="btn-secondary btn-live" target="_blank" rel="noopener noreferrer">🌐 Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== SECTION 5: MY JOURNEY =============== -->
+  <section id="journey" class="journey">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">My Journey</span>
+        <h2 class="section-title">180 days of <span class="gradient-text">relentless growth</span></h2>
+        <p class="section-subtitle">Started June 23, 2025. Goal: Remote Developer by April 2026.</p>
+      </div>
+
+      <div class="journey-progress-card reveal">
+        <div class="progress-header">
+          <h3>Progress Tracker</h3>
+          <span class="progress-day-count">Day 8 / 180</span>
+        </div>
+
+        <div class="progress-bar-container">
+          <div class="progress-bar-fill" style="width: 4.44%;" role="progressbar" aria-valuenow="8" aria-valuemin="0" aria-valuemax="180" aria-label="Journey progress: Day 8 of 180"></div>
+        </div>
+
+        <div class="journey-stats">
+          <div class="journey-stat">
+            <div class="journey-stat-value">5-6h</div>
+            <div class="journey-stat-label">Daily Focus</div>
+          </div>
+          <div class="journey-stat">
+            <div class="journey-stat-value">20+</div>
+            <div class="journey-stat-label">LeetCode Problems</div>
+          </div>
+          <div class="journey-stat">
+            <div class="journey-stat-value">8+</div>
+            <div class="journey-stat-label">Day Streak</div>
+          </div>
+          <div class="journey-stat">
+            <div class="journey-stat-value">₹12L+</div>
+            <div class="journey-stat-label">Target CTC</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="journey-cta reveal">
+        <p>
+          <strong>Following my journey?</strong> I share daily updates, struggles, and wins on Twitter.
+          Every line of code, every problem solved — documented publicly.
+        </p>
+        <a href="https://twitter.com/Vishaali_builds" class="btn-primary" target="_blank" rel="noopener noreferrer">
+          <span>Follow @Vishaali_builds</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== SECTION 6: CAMPUS AMBASSADOR =============== -->
+  <section id="ambassador" class="ambassador">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Campus Ambassador</span>
+        <h2 class="section-title">Leadership & community</h2>
+        <p class="section-subtitle">Building connections and representing industry leaders on campus.</p>
+      </div>
+
+      <div class="ambassador-grid">
+        <div class="ambassador-card reveal reveal-delay-1">
+          <div class="ambassador-logo microsoft" aria-hidden="true">🪟</div>
+          <div class="ambassador-info">
+            <h3>Microsoft Learn Student Ambassador</h3>
+            <p>Applied to represent Microsoft on campus and help peers learn Azure, GitHub, and modern development practices.</p>
+            <span class="ambassador-status applied">📨 Applied — June 2025</span>
+          </div>
+        </div>
+
+        <div class="ambassador-card reveal reveal-delay-2">
+          <div class="ambassador-logo postman" aria-hidden="true">🚀</div>
+          <div class="ambassador-info">
+            <h3>Postman Student Expert</h3>
+            <p>Working towards becoming a certified Postman Student Expert — mastering API testing and development.</p>
+            <span class="ambassador-status in-progress">🔄 In Progress</span>
+          </div>
+        </div>
+
+        <div class="ambassador-card reveal reveal-delay-3">
+          <div class="ambassador-logo github" aria-hidden="true">🐙</div>
+          <div class="ambassador-info">
+            <h3>GitHub Campus Expert</h3>
+            <p>Planning to apply as a GitHub Campus Expert to build developer communities and open-source culture.</p>
+            <span class="ambassador-status planned">📋 Planned</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== SECTION 7: EDUCATION =============== -->
+  <section id="education" class="education">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Education</span>
+        <h2 class="section-title">Academic foundation</h2>
+      </div>
+
+      <div class="education-card reveal">
+        <div class="education-icon" aria-hidden="true">🎓</div>
+        <div class="education-details">
+          <h3>Rajalakshmi Engineering College</h3>
+          <p class="edu-degree">Bachelor of Engineering — Computer Science</p>
+          <p>Third Year (Currently) • Chennai, India</p>
+          <p>Completed second year with no arrears. Active in technical competitions and campus ambassador programs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== SECTION 8: CONTACT =============== -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Get in Touch</span>
+        <h2 class="section-title">Let's build something <span class="gradient-text">together</span></h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Reach Out</h3>
+          <p>
+            I'm always open to exciting opportunities, collaborations, and conversations.
+            Whether it's a remote developer role, a project idea, or just a chat about tech — don't hesitate!
+          </p>
+
+          <div class="contact-methods">
+            <a href="mailto:vishaalitech@gmail.com" class="contact-method" id="contact-email">
+              <span class="contact-method-icon" aria-hidden="true">📧</span>
+              <span>vishaalitech@gmail.com</span>
+            </a>
+            <a href="https://github.com/VishaaliS" target="_blank" rel="noopener noreferrer" class="contact-method" id="contact-github">
+              <span class="contact-method-icon" aria-hidden="true">🐙</span>
+              <span>github.com/VishaaliS</span>
+            </a>
+            <a href="https://twitter.com/Vishaali_builds" target="_blank" rel="noopener noreferrer" class="contact-method" id="contact-twitter">
+              <span class="contact-method-icon" aria-hidden="true">🐦</span>
+              <span>@Vishaali_builds</span>
+            </a>
+            <a href="https://www.linkedin.com/in/vishaalitech" target="_blank" rel="noopener noreferrer" class="contact-method" id="contact-linkedin">
+              <span class="contact-method-icon" aria-hidden="true">💼</span>
+              <span>linkedin.com/in/vishaalitech</span>
+            </a>
+            <div class="contact-method">
+              <span class="contact-method-icon" aria-hidden="true">📍</span>
+              <span>Chennai, India — Open to remote work globally</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal reveal-delay-2" id="contact-form">
+          <h3>Send a Message</h3>
+          <div class="form-group">
+            <label for="form-name">Name</label>
+            <input type="text" id="form-name" name="name" placeholder="Your name" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="form-email">Email</label>
+            <input type="email" id="form-email" name="email" placeholder="you@example.com" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="form-message">Message</label>
+            <textarea id="form-message" name="message" placeholder="Tell me about your opportunity or idea..." rows="5" required></textarea>
+          </div>
+          <button type="submit" class="form-submit" id="form-submit-btn">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== SECTION 9: FOOTER =============== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-text">
+          Built by <span>Vishaali</span> • 2025 • Day 8 of 180-day journey
+        </p>
+        <div class="footer-status">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          Currently looking for remote developer opportunities
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/VishaaliS" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://twitter.com/Vishaali_builds" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a href="https://www.linkedin.com/in/vishaalitech" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:vishaalitech@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="back-to-top" aria-label="Back to top" type="button">↑</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
