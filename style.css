@@ -1328,6 +1328,19 @@ ul {
   letter-spacing: 0.08em;
 }
 
+/* Dynamic motivational / stale-data reminder message */
+.stats-motivational-msg {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--accent-blue);
+  background: rgba(59, 130, 246, 0.07);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: var(--radius-md);
+  padding: var(--space-md) var(--space-xl);
+  margin-bottom: var(--space-xl);
+  text-align: center;
+}
+
 .journey-cta {
   background: var(--bg-glass);
   border: 1px solid var(--border-card);

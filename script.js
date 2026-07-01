@@ -401,5 +401,5 @@ document.addEventListener('DOMContentLoaded', () => {
   // ============================================
   // DONE
   // ============================================
-  console.log('✨ Vishaali Portfolio loaded — Day 8/180 🚀');
+  console.log('✨ Vishaali Portfolio loaded — Building in Public 🚀');
 });
