@@ -1,14 +1,14 @@
 {
   "journey": {
-    "currentDay": 10,
+    "currentDay": 11,
     "totalDays": 180,
     "startDate": "2025-06-23"
   },
   "stats": {
-    "problemsSolved": 32,
-    "githubStreak": 10,
+    "problemsSolved": 35,
+    "githubStreak": 11,
     "projectsBuilt": 6,
-    "hoursInvested": 60
+    "hoursInvested": 65
   },
-  "lastUpdated": "2025-07-02"
+  "lastUpdated": "2025-07-03"
 }
